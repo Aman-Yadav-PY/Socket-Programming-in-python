@@ -1,5 +1,6 @@
 import socket
 import tkinter
+import sys
 
 # creating some constants
 HEADERSIZE = 10
@@ -39,5 +40,5 @@ while True:
 		client.setblocking(False)
 	except Exception as e:
 		print(e)
-		quit()
+		sys.exit()
 
